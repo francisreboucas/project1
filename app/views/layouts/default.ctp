@@ -1,47 +1,47 @@
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="pt-br"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="pt-br"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="pt-br"> <![endif]-->
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
 <head>
 	<?php echo $this->Html->charset(); ?>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
   <title><?php echo $title_for_layout; ?></title>
   <meta name="description" content="">
   <meta name="author" content="">
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- CSS concatenated and minified via ant build script-->
-  <?php echo $this->Html->css(array('default','cake.generic')); ?>
-  <!-- end CSS-->
- <?php echo $this->Html->script(array('libs/modernizr-2.0.6.min')); ?>
+	<?php echo $this->Html->css(array('default','960/960')); ?>
+  <!-- end CSS-->  
+	<?php 
+ //Example of how to use google webfonts - see webroot/css/custom.css
+	echo $this->Html->css('http://fonts.googleapis.com/css?family=Carme',NULL,array('inline'=>true));
+ 	echo $this->Html->script(array('libs/modernizr-2.0.6.min')); 
+	?>
 </head>
 
-<body>
+<body >
 
-  <div id="container">
+  <div id="container" class="container_12">
     <header>
-
+		<?php echo $this->element('header'); ?>
     </header>
-    <div id="main" role="main">
+    <div id="main"role="main">
 		<?php
 			echo $content_for_layout;
 		?>
     </div>
     <footer>
-
+		<?php echo $this->element('footer'); ?>
     </footer>
   </div> <!--! end of #container -->
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="<?php echo $this->Html->url('/js/lib/jquery-1.6.2.min.js'); ?>"><\/script>')</script>
-
-
   <!-- scripts concatenated and minified via ant build script-->
   <?php echo $this->Html->script(array('plugins','script'));
   		echo $scripts_for_layout;
