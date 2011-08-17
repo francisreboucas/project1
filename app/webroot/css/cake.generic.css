@@ -25,7 +25,6 @@
 body {
 	background: #003d4c;
 	color: #fff;
-	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
 	margin: 0;
 }
@@ -46,12 +45,10 @@ h1, h2, h3, h4 {
 	margin-bottom:0.5em;
 }
 h1 {
-	background:#fff;
 	color: #003d4c;
 	font-size: 100%;
 }
 h2 {
-	background:#fff;
 	color: #e32;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
@@ -94,8 +91,8 @@ ul, li {
 	background: #003d4c;
 	text-decoration: underline;
 }
-#content{
-	background: #fff;
+#main{
+	background-color:#fff;
 	clear: both;
 	color: #333;
 	padding: 10px 20px 40px 20px;
@@ -129,7 +126,6 @@ div.actions h3 {
 
 /** Tables **/
 table {
-	background: #fff;
 	border-right:0;
 	clear: both;
 	color: #333;
@@ -154,7 +150,6 @@ th a.desc:after {
 	content: ' ⇡';
 }
 table tr td {
-	background: #fff;
 	padding: 6px;
 	text-align: left;
 	vertical-align: top;
@@ -188,7 +183,6 @@ table td.actions a {
 
 /** Paging **/
 div.paging {
-	background:#fff;
 	color: #ccc;
 	margin-top: 1em;
 	clear:both;
@@ -236,7 +230,6 @@ fieldset {
 	padding: 16px 20px;
 }
 fieldset legend {
-	background:#fff;
 	color: #e32;
 	font-size: 160%;
 	font-weight: bold;
@@ -446,7 +439,6 @@ pre.cake-debug {
 	position: relative;
 }
 div.cake-stack-trace {
-	background: #fff;
 	color: #333;
 	margin: 0px;
 	padding: 6px;

@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- CSS concatenated and minified via ant build script-->
-	<?php echo $this->Html->css(array('default','960/960')); ?>
+	<?php echo $this->Html->css(array('cake.generic','default','960/960')); ?>
   <!-- end CSS-->  
 	<?php 
  //Example of how to use google webfonts - see webroot/css/custom.css

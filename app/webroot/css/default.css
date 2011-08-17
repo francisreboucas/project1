@@ -67,7 +67,7 @@ td { vertical-align: top; }
    ========================================================================== */
 .ie7 img { -ms-interpolation-mode: bicubic; }
 body{ font-family: 'Carme', Arial, serif; }
-a {	color: orange; }
+a:link, a:hover, a:visited {	color: orange; }
 h1 {font-size: 30px; }
 
 
